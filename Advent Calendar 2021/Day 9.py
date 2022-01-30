@@ -46,9 +46,9 @@ for k in range(len(myinput)):
 
 
 def check(input, x, y, numcords):
-    if x < 0 or y < 0 or x >= len(input) - 1 or y >= ((input[y]).__len__()) - 1 or input[y][x] == '9' or (y, x) in numcords:
+    if x < 0 or y < 0 or x >= len(input) - 1 or y >= ((input[y]).__len__()) - 1 or input[y][x] == '9' or (
+    y, x) in numcords:
         return
-
     numcords.append((y, x))
     check(input, x, y + 1, numcords)
     check(input, x, y - 1, numcords)
@@ -72,4 +72,4 @@ while n < 3:
     n += 1
 print(total)
 print(sum)
-#print(cords)
+# print(cords)
