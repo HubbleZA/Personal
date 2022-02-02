@@ -4,6 +4,7 @@ with open('Day_11_Input.txt', "r") as f:
 for i in range(len(myinput)):
     myinput[i] = list(map(int,myinput[i]))
 
+zerolist = [[0]*len(myinput)]*len(myinput[0])
 
 def flash(position, x, y, burn):
 
@@ -21,11 +22,12 @@ def flash(position, x, y, burn):
         flash(position, x + 1, y + 1, burn)
         flash(position, x - 1, y - 1, burn)
 
-
 n = 0
 f = 0
-while n < 100:
+step = 0
+while myinput != zerolist:
     burnout = []
+    step += 1
     for i in range(len(myinput)):
         for k in range(len(myinput[i])):
             flash(myinput, i, k, burnout)
@@ -35,6 +37,7 @@ while n < 100:
     n += 1
 
 print(f)
+print(step)
 
 
 #1578 too low
