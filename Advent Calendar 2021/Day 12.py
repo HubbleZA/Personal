@@ -12,3 +12,5 @@ for i in myinput:
     caves[b].append(a)
 
 print(caves)
+
+def path(graph, src, dst, visited):
