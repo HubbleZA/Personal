@@ -12,7 +12,6 @@ for i in range(len(keys)):
     key[keys[i][:2]] = keys[i][(len(keys[i]))-1:]
 
 for k in range(10):
-    print(k)
     p = 0
     for i in range(len(words)):
         i += p
