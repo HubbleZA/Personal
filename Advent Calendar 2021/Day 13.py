@@ -24,7 +24,6 @@ for i in range(len(x)):
     (map[(y[i])-1][(x[i])-1]) = 1
 
 
-
 def fold(axis, line, map):
     fmap = []
     if axis == 'x':
